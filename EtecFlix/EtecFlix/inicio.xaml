@@ -11,7 +11,7 @@
             <Picker x:Name="pickerCategoria" HorizontalOptions="Center" Grid.ColumnSpan="3" Style="{StaticResource PickerItens}" SelectedItem="pickerSelected">
 
                 <Picker.Items>
-                    <x:String>Ação</x:String>
+                    <x:String>Ação zéhub</x:String>
                     <x:String>Aventura</x:String>
                     <x:String>Terror</x:String>
                     <x:String>Maratona</x:String>
@@ -28,7 +28,7 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="200"/>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="150"/>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
