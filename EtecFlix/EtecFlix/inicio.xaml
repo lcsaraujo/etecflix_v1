@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EtecFlix.inicio"
+             BackgroundColor="#1C1C1C">
+
+    <ScrollView>
+        <StackLayout>
+        <Image Source="etecflix.png"/>
+
+            <Picker x:Name="pickerCategoria" HorizontalOptions="Center" Grid.ColumnSpan="3" Style="{StaticResource PickerItens}" SelectedItem="pickerSelected">
+
+                <Picker.Items>
+                    <x:String>Ação</x:String>
+                    <x:String>Aventura</x:String>
+                    <x:String>Terror</x:String>
+                    <x:String>Maratona</x:String>
+                </Picker.Items>
+            </Picker>
+            
+
+            <Grid x:Name="G1" RowSpacing="1" ColumnSpacing="10" Padding="10">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+                <ImageButton x:Name="f1" Source=""
+                Grid.Row="2" Grid.Column="0"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"
+                Clicked="Btn_f1"/>
+
+
+        </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,63 @@
+
+            <Button x:Name="f2" Text="Capitã Marvel"
+                Grid.Row="3" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f3" Text="Homem de Ferro"
+                Grid.Row="4" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f4" Text="O Incrível Hulk"
+                Grid.Row="5" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f5" Text="Homem de Ferro 2"
+                Grid.Row="6" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f6" Text="Thor"
+                Grid.Row="7" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f7" Text="Os Vingadores"
+                Grid.Row="8" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f8" Text="Homem de Ferro 3"
+                Grid.Row="9" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f9" Text="Thor: O Mundo Sombrio"
+                Grid.Row="10" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f10" Text="Capitão América 2 - O Soldado Invernal"
+                Grid.Row="11" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>

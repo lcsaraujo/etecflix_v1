@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EtecFlix.Filmes.capv"
+             BackgroundColor="#1c1c1c">
+
+
+    <StackLayout>
+
+        <Image x:Name="etecflix" Style="{StaticResource LogoEtec}"/>
+
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <!--0-->
+                <ColumnDefinition Width="*"/>
+                <!--1-->
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <!--0-->
+                <RowDefinition Height="*"/>
+                <!--1-->
+            </Grid.RowDefinitions>
+
+            <Image x:Name="poster" Grid.Row="1" Grid.Column="0" Source="capv.png" Aspect="AspectFill"/>
+
+            <StackLayout Grid.Row="1" Grid.Column="1">
+
+                <Label Text="Nome: " Style="{StaticResource Label}"/>
+                <Label Text="Capitão América - O Primeiro Vingador" Style="{StaticResource Label2}"/>
+
+                <Label Text="Ano de lançamento:" Style="{StaticResource Label}"/>
+                <Label Text="29 de julho de 2011" Style="{StaticResource Label2}"/>
+
+                <Label Text="Direção:" Style="{StaticResource Label}"/>
+                <Label Text="Joe Johnston" Style="{StaticResource Label2}"/>
+                
+            </StackLayout>
+            
+            <!--<Button x:Name="Btnvoltar" Text="Voltar a pagina inicial"
+                    Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="FillAndExpand"
+                    Style="{StaticResource Buttonvoltar}"
+                    Clicked="Btn_voltar"/>
+
+            <Button x:Name="Btnassitir" Text="Assistir"
+                    Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="FillAndExpand"
+                    Style="{StaticResource Buttonvoltar}"/>-->
+
+    </Grid>
+    </StackLayout>
+
+
+</ContentPage>

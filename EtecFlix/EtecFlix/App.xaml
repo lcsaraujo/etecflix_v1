@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EtecFlix.App">
+
+        <Application.Resources>
+  
+                <Style x:Key="Titulo" TargetType="Label">
+                    <Setter Property="TextColor" Value="#e80000"/>
+                    <Setter Property="FontSize" Value="40"/>
+                </Style>
+                <Style x:Key="Button" TargetType="Button">
+                    <Setter Property="BackgroundColor" Value="#e80000" />
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="BorderRadius" Value="10"/>
+                </Style>
+                <Style x:Key="Buttonvoltar" TargetType="Button">
+                    <Setter Property="BackgroundColor" Value="#e80000" />
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="BorderRadius" Value="10"/>
+                </Style>
+                <Style x:Key="Image" TargetType="Image">
+                    <Setter Property="WidthRequest" Value="300"/>
+                    <Setter Property="HeightRequest" Value="500"/>
+                </Style>
+                <Style x:Key="Label" TargetType="Label">
+                    <Setter Property="TextColor" Value="#e80000"/>
+                    <Setter Property="FontSize" Value="14"/>
+                </Style>
+                <Style x:Key="Label2" TargetType="Label">
+                    <Setter Property="TextColor" Value="#FFF"/>
+                    <Setter Property="FontSize" Value="14"/>
+                </Style>
+                    <Style x:Key="LogoEtec" TargetType="Image">
+                    <Setter Property="HeightRequest" Value="50"/>
+                </Style>
+                <Style x:Key="ButtonPosters" TargetType="ImageButton">
+                    <Setter Property="Aspect" Value="Fill"/>
+                    <Setter Property="BorderColor" Value="#555"/>
+                    <Setter Property="BorderWidth" Value="2"/>
+                </Style>
+        <Style x:Key="PickerItens" TargetType="Picker">
+            <Setter Property="TextColor" Value="#e80000"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Title" Value="Selecione uma Categoria"/>
+        </Style>
+
+        </Application.Resources>
+
+
+</Application>

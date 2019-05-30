@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EtecFlix.Filmes.capv"
+             BackgroundColor="#1c1c1c">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Titulo" TargetType="Label">
+                <Setter Property="TextColor" Value="#e80000"/>
+                <Setter Property="FontSize" Value="40"/>
+            </Style>
+            <Style x:Key="Button" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#e80000" />
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="BorderRadius" Value="10"/>
+            </Style>
+            <Style x:Key="Buttonvoltar" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#e80000" />
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="BorderRadius" Value="10"/>
+            </Style>
+            <Style x:Key="Image" TargetType="Image">
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="HeightRequest" Value="500"/>
+            </Style>
+            <Style x:Key="Label" TargetType="Label">
+                <Setter Property="TextColor" Value="#e80000"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+            <Style x:Key="Label2" TargetType="Label">
+                <Setter Property="TextColor" Value="#FFF"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <FlexLayout >
+    <Grid x:Name="G1" RowSpacing="1" ColumnSpacing="10" Padding="10">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45"/>
+            <!--0-->
+            <ColumnDefinition Width="70"/>
+            <!--1-->
+            <ColumnDefinition Width="90"/>
+            <!--2-->
+            <ColumnDefinition Width="110"/>
+            <!--3-->
+            <ColumnDefinition Width="90"/>
+            <!--4-->
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <!--0-->
+            <RowDefinition Height="70"/>
+            <!--1-->
+            <RowDefinition Height="70"/>
+            <!--2-->
+            <RowDefinition Height="70"/>
+            <!--3-->
+            <RowDefinition Height="70"/>
+            <!--4-->
+            <RowDefinition Height="70"/>
+            <!--5-->
+            <RowDefinition Height="70"/>
+            <!--6-->
+            <RowDefinition Height="50"/>
+            <!--7-->
+            <RowDefinition Height="30"/>
+            <!--8-->
+            <RowDefinition Height="30"/>
+            <!--9-->
+            <RowDefinition Height="30"/>
+            <!--10-->
+            <RowDefinition Height="70"/>
+            <!--11-->
+            
+            </Grid.RowDefinitions>
+
+            
+
+        <Image Source="etecflix.png"
+                       Grid.Row="0" Grid.Column="0"
+                       Grid.ColumnSpan="4"/>
+
+        <Image Source="capv.png"
+               Grid.Row="2" Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="4"
+               Style="{StaticResource Image}"/> 
+      
+        <Label x:Name="lblname" Text="Nome: "
+                       Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"
+                       Style="{StaticResource Label}"/>
+        <Label x:Name="lblfilme" Text="Capitão América - O Primeiro Vingador"
+                       Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="5"
+               Style="{StaticResource Label2}"/>
+
+        <Label x:Name="lbllan" Text="Ano de lançamento:"
+                       Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="4"
+                       Style="{StaticResource Label}"/>
+        <Label x:Name="lblano" Text="29 de julho de 2011"
+                       Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2"
+                       Style="{StaticResource Label2}"/>
+
+        <Label x:Name="lbldir" Text="Direção:"
+                       Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2"
+                       Style="{StaticResource Label}"/>
+        <Label x:Name="lblndir" Text="Joe Johnston"
+                       Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2"
+                       Style="{StaticResource Label2}"/>
+
+        <Button x:Name="Btnvoltar" Text="Voltar a pagina inicial"
+                Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2"
+                HorizontalOptions="Fill"
+                VerticalOptions="FillAndExpand"
+                Style="{StaticResource Buttonvoltar}"
+                Clicked="Btn_voltar"/>
+        
+        <Button x:Name="Btnassitir" Text="Assistir"
+                Grid.Row="11" Grid.Column="2" Grid.ColumnSpan="2"
+                HorizontalOptions="Fill"
+                VerticalOptions="FillAndExpand"
+                Style="{StaticResource Buttonvoltar}"/>
+
+            
+        </Grid>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>

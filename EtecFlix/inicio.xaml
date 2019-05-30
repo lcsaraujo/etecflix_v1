@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EtecFlix.inicio"
+             BackgroundColor="#1C1C1C">
+
+
+        <ContentPage.Resources>
+            <ResourceDictionary>
+                <Style x:Key="Titulo" TargetType="Label">
+                    <Setter Property="TextColor" Value="#e80000"/>
+                    <Setter Property="FontSize" Value="40"/>
+                </Style>
+                <Style x:Key="Button" TargetType="Button">
+                    <Setter Property="BackgroundColor" Value="#e80000" />
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="BorderRadius" Value="10"/>
+                </Style>
+
+            </ResourceDictionary>
+        </ContentPage.Resources>
+    
+    <ScrollView>
+        <Grid x:Name="G1" RowSpacing="1" ColumnSpacing="10" Padding="10">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="78"/>
+                <ColumnDefinition Width="78"/>
+                <ColumnDefinition Width="* "/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+
+            </Grid.RowDefinitions>
+
+            <Image Source="etecflix.png"
+               Grid.Row="0" Grid.Column="0"
+               Grid.ColumnSpan="4"/>
+
+
+            <Button x:Name="f1" Text="Capitão América: O Primeiro Vingador"
+                Grid.Row="2" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"
+                Clicked="Btn_f1"/>
+
+            <Button x:Name="f2" Text="Capitã Marvel"
+                Grid.Row="3" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f3" Text="Homem de Ferro"
+                Grid.Row="4" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f4" Text="O Incrível Hulk"
+                Grid.Row="5" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f5" Text="Homem de Ferro 2"
+                Grid.Row="6" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f6" Text="Thor"
+                Grid.Row="7" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f7" Text="Os Vingadores"
+                Grid.Row="8" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f8" Text="Homem de Ferro 3"
+                Grid.Row="9" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f9" Text="Thor: O Mundo Sombrio"
+                Grid.Row="10" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+            <Button x:Name="f10" Text="Capitão América 2 - O Soldado Invernal"
+                Grid.Row="11" Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"
+                Style="{StaticResource Button}"/>
+
+
+
+
+            <Image Source="usuario.jpg"
+               Aspect="AspectFit"
+                WidthRequest="300"
+               HeightRequest="300" />
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
